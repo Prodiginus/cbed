@@ -1,0 +1,16 @@
+{
+  "name": "cbed",
+  "version": "1.0.0",
+  "description": "A discord bot for testing c functions",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Prodiginus",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.2",
+    "dotenv": "^8.2.0",
+    "puppeteer": "^2.1.1"
+  }
+}
