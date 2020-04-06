@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const puppeteer = require('puppeteer');
+//const puppeteer = require('puppeteer');
 
 const Client = new Discord.Client();
 
