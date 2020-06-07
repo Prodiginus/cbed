@@ -9,7 +9,7 @@
   "author": "Prodiginus",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.0.2",
+    "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "puppeteer": "^2.1.1"
   }
