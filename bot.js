@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const puppeteer = require('puppeteer');
+
 var Browser;
 (async () => {
   Browser = await puppeteer.launch();
@@ -22,7 +23,7 @@ Client.on('message', async (msg) => {
     Client.destroy();
   }
   if(msg.content.startsWith("!help")) {
-    msg.channel.send("Type !exec \\\`\\\`\\\`c and then a new line and then your function, and close it with \\\`\\\`\\\`. Currently this project only supports a function that uses 2 strings as parameters and returns a string that is less than 120 characters long. An example would look something like this: ```c\nchar* firstLetters(char* str1, char*str2) {\n\tchar* tmp[10];\n\ttmp[0]=str1[0];\n\ttmp[1]=str2[0];\n\ttmp[2]='\\0';\n\treturn tmp;\n}```");
+    msg.channel.send("Type, in a direct message to me: !exec \\\`\\\`\\\`c and then a new line and then your function, and close it with \\\`\\\`\\\`. Currently this project only supports a function that uses 2 strings as parameters and returns a string that is less than 120 characters long. An example would look something like this: ```c\nchar* firstLetters(char* str1, char*str2) {\n\tchar* tmp[10];\n\ttmp[0]=str1[0];\n\ttmp[1]=str2[0];\n\ttmp[2]='\\0';\n\treturn tmp;\n}```");
   }
   if(msg.content.startsWith("!exec\n```c")) {
     if(msg.channel.type != "dm") {
@@ -111,7 +112,6 @@ const addToMain = (str) => {
     printf("Given \\\"\\\" and \\\"string\\\", your function output: <%s>\\n", tmp);
     return 0;
   }\n`;
-  console.log(main);
   var full = main.concat(str);
   return full;
 }
