@@ -97,12 +97,18 @@ const addToMain = (str) => {
   int main(void) {
     char tmp[120];
     char h[120];
-    ${Fname}("owo", "uwu", h);
+    ${Fname}("abcdefg", "abcdefg", h);
     strcpy(tmp, h);
-    printf("Given \\\"owo\\\" and \\\"uwu\\\", your function output: <%s>\\n", tmp);
-    ${Fname}("wo", "uu", h);
+    printf("Given \\\"abcdefg\\\" and \\\"abcdefg\\\", your function output: <%s>\\n", tmp);
+    ${Fname}("a", "b", h);
     strcpy(tmp, h);
-    printf("Given \\\"wo\\\" and \\\"uu\\\", your function output: <%s>\\n", tmp);
+    printf("Given \\\"a\\\" and \\\"b\\\", your function output: <%s>\\n", tmp);
+    ${Fname}("123", "1234", h);
+    strcpy(tmp, h);
+    printf("Given \\\"123\\\" and \\\"1234\\\", your function output: <%s>\\n", tmp);
+    ${Fname}("", "string", h);
+    strcpy(tmp, h);
+    printf("Given \\\"\\\" and \\\"string\\\", your function output: <%s>\\n", tmp);
     return 0;
   }\n`;
   console.log(main);
